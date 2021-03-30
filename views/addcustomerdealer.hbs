@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Online Gas Booking System</title>
+        <link rel="stylesheet" href="/style.css">
+        <!--<script src="/scripts/index.js"></script>-->
+
+
+    <style>
+      input[type=text], input[type=password], textarea {  
+    width: 100%;  
+    padding: 15px;  
+    margin: 5px 0 22px 0;  
+    display: inline-block;  
+  }  
+    </style>    
+  
+
+
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="header">
+            <div class="logo">
+            <a href="#"><img src="/images/gas1.jpg" alt="gas_cylinder"width="140" height="80"/></a>
+            </div>
+            <div class="webname">
+            <h1>Gas Booking System</h1>
+            
+            </div>
+        </div> 
+        <br>
+        <div id=nevigation> 
+                <hr/>  
+                <a href="/"> Home</a> |
+                <a href="/about"> About Us</a> |
+                <a href="/contactus"> Contact Us</a> |
+                <a href="/adminhome"> Dashboard</a> |
+                <a href="/adminhome"> Administration</a> |
+
+                <a href="/"> Logout</a> |
+
+            </div>
+        <hr/>
+        <center>  <h1> Add Customer/Dealer Form</h1> </center>  
+            <hr>
+        <form action="/auth/addcustomerdealer" method="POST">  
+            <div class="container">  
+             <label> Firstname </label>   
+          <input type="text" id="firstname" name="firstname" placeholder= "Firstname" size="15" required />   
+          <label> Middlename: </label>   
+          <input type="text" id="middlename" name="middlename" placeholder="Middlename" size="15" required />   
+          <label> Lastname: </label>    
+          <input type="text" id="lastname" name="lastname" placeholder="Lastname" size="15"required />   
+          <div>  
+          <label>   
+          Actor[Dealer/Customer] *:  
+          </label>   
+          <input type="radio" id="actor" value="Dealer" name="actor" checked > Dealer   
+          <input type="radio" id="actor" value="Customer" name="actor"> Customer   
+           
+          <!--<option id="actor" value="customer" name="actor">Customer</option>  -->
+           
+          </div>  
+          <div>  
+          <label>   
+          Gender :  
+          </label><br>  
+          <input type="radio" id="gender" value="Male" name="gender" checked > Male   
+          <input type="radio" id="gender" value="Female" name="gender"> Female   
+          <input type="radio" id="gender" value="Other" name="gender"> Other  
+            
+          </div>  
+          <label>   
+          Phone :  
+          </label>  
+          <input type="text" id="phone" name="phone" placeholder="phone no." size="10" required>   
+          Permanent Address *:  
+          <textarea cols="80" rows="5" id="permanentaddress" placeholder="Current Address" name="permanentaddress" required>  
+          </textarea>  
+           <label><b>Email *</b></label>  
+           <input type="text" id="email" placeholder="Enter Email" name="email" required>  
+            
+              <label><b>Password *</b></label>  
+              <input type="password" id="password" placeholder="Enter Password" name="password" required>  
+            
+
+              <label><b>Confirm Password *</b></label>  
+              <input type="password" id="cpassword" placeholder="Enter Password" name="cpassword" required>  
+
+
+             <!--<button type="submit" class="registerbtn"  onclick="Onclick()">Register</button>    
+              -->
+              <button type="submit">Register</button>    
+
+            </form>
+           {{#if message}}
+            <h4 class="alert alert-danger mt-4" style="color: red;">{{message}}</h4>
+           {{/if}}
+    </div>
+
+        <br>
+                <div class="footer" style="background-color: #717171;">
+                    <p><center>
+                        Copyright © Online Gas Booking System<br>
+                        SiteMap Terms of Use Privacy Policy Hyperlinking Policy<br>
+                        Powered By Online Gas System Pvt Ltd
+                    </center></p>
+
+                </div>
+
+        </div>    
+        
+        
+        
+    </body>
+</html>

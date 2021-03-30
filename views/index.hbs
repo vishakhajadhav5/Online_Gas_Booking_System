@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Online Gas Booking System</title>
+ <!--       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+ -->
+       <link rel="stylesheet" href="/style.css">
+
+        <!--<script src="/scripts/client.js"></script>-->
+        
+    </head>
+    <body>
+        <div class="wrapper">
+            
+            <div class="header">
+                <div class="logo">
+                <a href="#"><img src="/images/gas1.jpg" alt="gas1_cylinder"width="140" height="80"/></a>
+                </div>
+                <div class="webname">
+                <h1>Gas Booking System</h1>
+                
+                </div>
+            </div> 
+            <br>
+            <div id=nevigation> 
+                <hr/>  
+                <a href="/"> Home</a> |
+                <a href="/about"> About Us</a> |
+                <a href="/login"> Login</a> |
+                <a href="/contactus"> Contact Us</a> |
+
+            </div>
+            <!--slider code -->
+            <hr/>
+            <div class="slideshow-container" style="height: 25px;">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="/images/slider1.jpg" style="width:100%;height: 300px;">
+                  
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="/images/slider2.jpg" style="width:100%;height: 300px;">
+                  
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="/images/slider3.jpg" style="width:100%;height: 300px;">
+                 
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 4</div>
+                  <img src="/images/slider4.jpg" style="width:100%;height: 300px;">
+                 
+                </div>
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+              </div>
+            </div>
+                <br>
+                
+            
+            <!-- ******************       script for slider     **********************-->
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                    </script>
+                    
+                    <!--*****************************************-->
+                    
+                     <br>
+                     <div class="bottomHome">
+                        <marquee behavior="scroll" direction="left" style="padding:5px 0 0 15px; color:rgb(12, 12, 12);font-size: 25px;">We preferred clean cooking fuel in over 42 million homes &amp; counting... Helping to create a healthy Bharat !!</marquee>
+                        
+                     </div>
+                     <br>
+                     <div class="gasconnect">
+                        
+                    <table style="width:100%">
+                        
+                        <tr>
+                          <td><img src="/images/gasconnection.png" style="width: 800;"/> 
+                          </td>
+                          <td><img src="/images/gasconnectionhotel.jpg" style="width: 800;"/> 
+                          </td>
+                          <td><img src="/images/gasconnectionpipe.jpg" style="width: 800;"/> 
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="gasconnecthome.html"><p>LPG For Cooking in Home</p></a> 
+                          </td>
+                          <td><a href="gasconnecthotel.html"><p>LPG For Restaurant</p></a>
+                          </td>
+                          <td><a href="gasconnecthotel.html"><p>LPG Installation Service</p></a>
+                          </td>
+                        </tr>
+                       
+                      </table>
+                      
+                     </div>
+                
+                <div class="partner">
+                    <h1><center>Partner with Us</center> </h1>
+                    <br>
+                    <table style="width:100%">
+                        
+                        <tr>
+                          <td><img src="/images/bharatgas.jpg" style="width: 800;"/> 
+                          </td>
+                          <td><img src="/images/indianoil.jpg" style="width: 800;"/> 
+                          </td>
+                          <td><img src="/images/HP.jpg" style="width: 800;"/> 
+                          </td>
+                          <td><img src="/images/supergas.png" style="width: 800;"/> 
+                          </td>
+                        </tr>
+                    </table>    
+                </div>
+                <br>
+                <div class="footer" style="background-color: #717171;">
+                    <p><center>
+                        Copyright © Online Gas Booking System<br>
+                        SiteMap Terms of Use Privacy Policy Hyperlinking Policy<br>
+                        Powered By Online Gas System Pvt Ltd
+                    </center></p>
+
+                </div>
+        </div>    
+        
+        
+        
+    </body>
+</html>

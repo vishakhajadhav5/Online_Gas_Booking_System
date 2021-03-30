@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Online Gas Booking System</title>
+        <link rel="stylesheet" href="/style.css">
+        <!--<script src="/scripts/index.js"></script>-->
+
+
+    <style>
+      input[type=text], input[type=password], textarea {  
+    width: 100%;  
+    padding: 15px;  
+    margin: 5px 0 22px 0;  
+    display: inline-block;  
+  }  
+    </style>    
+  
+
+
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="header">
+            <div class="logo">
+            <a href="#"><img src="/images/gas1.jpg" alt="gas_cylinder"width="140" height="80"/></a>
+            </div>
+            <div class="webname">
+            <h1>Gas Booking System</h1>
+            
+            </div>
+        </div> 
+        <br>
+        <div id=nevigation> 
+            <hr/>  
+            <div id=nevigation> 
+                <hr/>  
+                <a href="/"> Home</a> |
+                <a href="/about"> About Us</a> |
+                <a href="/contactus"> Contact Us</a> |
+                <a href="/adminhome"> Dashboard</a> |
+                <a href="/adminhome"> Administration</a> |
+
+                <a href="/"> Logout</a> |
+
+            </div>
+        </div>
+        <hr/>
+        <center>  <h1> Gas Connection Form</h1> </center>  
+            <hr>
+        <form action="/auth/addgasconnection" method="POST" oninput="totalcost.value=parseInt(nocylinder.value)*parseInt(fixvalue.value)">  
+            <div class="container">  
+             <label> Gas Connection Date: </label>   
+          <input type="date" id="connectiondate" name="connectiondate" required />   
+          <label> No of Gas Cylinder (between 1 to 3): </label>   
+          <input type="number" id="nocylinder" name="nocylinder" min="1" max="5">
+          *<input type="number" id="fixvalue" value="500">
+          Total Cost=<output id="totalcost" name="totalcost"></output> 
+            <button type="submit">Submit</button>    
+
+            </form>
+           {{#if message}}
+            <h4 class="alert alert-danger mt-4" style="color: red;">{{message}}</h4>
+           {{/if}}
+    </div>
+
+        <br>
+                <div class="footer" style="background-color: #717171;">
+                    <p><center>
+                        Copyright © Online Gas Booking System<br>
+                        SiteMap Terms of Use Privacy Policy Hyperlinking Policy<br>
+                        Powered By Online Gas System Pvt Ltd
+                    </center></p>
+
+                </div>
+
+        </div>    
+        
+        
+        
+    </body>
+</html>

@@ -1,0 +1,122 @@
+
+.logo {
+    float: left;
+    width: 10%;
+     /* Should be removed. Only for demonstration */
+  }
+  .webname{
+      float:left;
+    width: 90%;
+    font-size: 20px;
+    
+  }
+  
+  /*style for slider*/
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    /*max-width: 1000px;*/
+   
+    position: relative;
+    /*margin: auto;*/
+    height: 10%;
+  }
+  
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(14, 13, 13);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  .bottomHome  {
+      display: table-cell;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-top: 250px;
+      vertical-align: bottom;
+      width: 10%;
+      height: 5%;
+  }
+  .gasconnect{
+      
+      display: table-cell;
+      padding-bottom: 33px;
+      padding-left: 20px;
+      padding-top: 1px;
+      vertical-align: bottom;
+      width: 70%;
+  
+  }
+  
+  /*login page css button*/
+  
+  button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+  
+    /*registration css*/
+    
+    input[type=text]:focus, input[type=password]:focus {  
+      outline: none;  
+    }  
+     div {  
+                padding: 10px 0;  
+             }  
+   
+   
+  
+  

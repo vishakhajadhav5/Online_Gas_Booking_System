@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Online Gas Booking System</title>
+  <link rel="stylesheet" href="/style.css">
+
+  <!--<script src="/scripts/client.js"></script>-->
+  <style>
+
+
+
+  </style>
+
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="header">
+      <div class="logo">
+        <a href="#"><img src="/images/gas1.jpg" alt="gas_cylinder" width="140" height="80" /></a>
+      </div>
+      <div class="webname">
+        <h1>Gas Booking System</h1>
+
+      </div>
+    </div>
+    <br>
+    <div id=nevigation>
+      <hr />
+      <a href="/"> Home</a> |
+      <a href="/about"> About Us</a> |
+      <a href="/contactus"> Contact Us</a> |
+
+    </div>
+    <hr />
+
+    <h2>
+      <center>Login Form</center>
+    </h2>
+    <center>
+      <form action="/auth/login" method="POST">
+        <!--<div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>-->
+
+        <table>
+          <tr>
+            <td><label><b>Email Id</b></label></td>
+
+            <td
+              style="width: 100%;padding: 12px 20px;margin: 8px 0;display: inline-block;border:1px solid #ccc;box-sizing: border-box;">
+              <input type="text" placeholder="Enter Username" id="email" name="email" required>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label><b>Password</b></label></td>
+            <td
+              style="width: 100%;padding: 12px 20px;margin: 8px 0;display: inline-block;border:1px solid #ccc;box-sizing: border-box;">
+              <input type="password" placeholder="Enter Password" id="password" name="password" required>
+            </td>
+          </tr>
+        <tr>
+
+        <label>   
+          Actor*:  
+          </label> 
+          <input type="radio" id="Actor" value="Dealer" name="Actor" checked > Admin   
+          <input type="radio" id="Actor" value="Dealer" name="Actor" > Dealer   
+          <input type="radio" id="Actor" value="Customer" name="Actor"> Customer   
+         
+        </tr>
+
+          <tr>
+            <td>
+            </td>
+            <td style="padding: 16px;"><button type="submit">Login</button></td>
+          </tr>
+          <tr>
+            <td><label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label></td>
+
+            <td><a href="/register">New Registration</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="cancelbtn">Cancel</button>
+            </td>
+            <td>
+              Forgot <a href="#">password?</a>
+            </td>
+          </tr>
+        </table>
+      </form>
+      {{#if message}}
+      <h4 class="alert alert-danger mt-4" style="color: red;">{{message}}</h4>
+      {{/if}}
+      <div class="container" style="background-color:#f1f1f1;padding: 16px;">
+
+      </div>
+      </form>
+    </center>
+
+    <br>
+    <div class="footer" style="background-color: #717171;">
+      <p>
+        <center>
+          Copyright © Online Gas Booking System<br>
+          SiteMap Terms of Use Privacy Policy Hyperlinking Policy<br>
+          Powered By Online Gas System Pvt Ltd
+        </center>
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+</body>
+
+</html>

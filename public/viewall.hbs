@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Online Gas Booking System</title>
+        <link rel="stylesheet" href="/style.css">
+
+     <!--addgasconnection onclick event-->
+       
+        
+    </head>
+    <body>
+        <div class="wrapper">
+            
+            <div class="header">
+                <div class="logo">
+                <a href="#"><img src="/images/gas1.jpg" alt="gas_cylinder"width="140" height="80"/></a>
+                </div>
+                <div class="webname">
+                <h1>Gas Booking System</h1>
+                
+                </div>
+            </div> 
+            <br>
+             <div id=nevigation> 
+                <hr/>  
+                <a href="/"> Home</a> |
+                <a href="/about"> About Us</a> |
+                <a href="/contactus"> Contact Us</a> |
+                <a href="/adminhome"> Dashboard</a> |
+                <a href="/adminhome"> Administration</a> |
+
+                <a href="/"> Logout</a> |
+
+            </div>
+            <!--slider code -->
+           <table>
+               <tr>
+                <th>User ID</th>
+                <th>Firstname</th>
+                <th>Middlename</th>
+                <th>Lastname</th>
+                <th>Actor</th>
+                <th>Gender</th>
+                <th>Phone</th>
+                <th>Permanent Address</th>
+                <th>Email</th>
+               </tr>
+               
+                
+        {{#if(userData.length!=0)}}
+        var i=1;
+        userData.forEach(function(data){
+        {{/if}}
+               <tr>
+                  <td>data.uid</td> 
+                  <td>data.firstname</td> 
+                  <td>data.middlename</td> 
+                  <td>data.lastname</td> 
+                  <td>data.actor</td> 
+                  <td>data.gender</td> 
+                  <td>data.phone</td> 
+                  <td>data.parmanentaddress</td> 
+                  <td>data.email</td> 
+
+
+               </tr>
+           </table>
+
+                
+                <br>
+                <div class="footer" style="background-color: #717171;">
+                    <p><center>
+                        Copyright © Online Gas Booking System<br>
+                        SiteMap Terms of Use Privacy Policy Hyperlinking Policy<br>
+                        Powered By Online Gas System Pvt Ltd
+                    </center></p>
+
+                </div>
+        </div>    
+        
+        
+        
+    </body>
+</html>

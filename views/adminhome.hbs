@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Online Gas Booking System</title>
+        <link rel="stylesheet" href="/style.css">
+
+     <!--addgasconnection onclick event-->
+     <script>
+       function addgasconnection()
+       {
+         window.open("addgasconnection");
+       }
+        function addcustomerdealer()
+        {
+          window.open("addcustomerdealer");
+
+        }
+      
+     </script>     
+        
+    </head>
+    <body>
+        <div class="wrapper">
+            
+            <div class="header">
+                <div class="logo">
+                <a href="#"><img src="/images/gas1.jpg" alt="gas_cylinder"width="140" height="80"/></a>
+                </div>
+                <div class="webname">
+                <h1>Gas Booking System</h1>
+                
+                </div>
+            </div> 
+            <br>
+             <div id=nevigation> 
+                <hr/>  
+                <a href="/"> Home</a> |
+                <a href="/about"> About Us</a> |
+                <a href="/contactus"> Contact Us</a> |
+                <a href="/adminhome"> Dashboard</a> |
+                <a href="/adminhome"> Administration</a> |
+
+                <a href="/"> Logout</a> |
+
+            </div>
+            <!--slider code -->
+           
+
+                <div class="gasconnect">
+                        
+                    <table style="width:100%">
+                        
+                        <tr>
+                          <td><center><img src="/images/add.png" style="width: 100;   border-radius: 50%;
+                            "/> </center>
+                          </td>
+                          <td><center><img src="/images/addconnection.jpg" style="width: 100;  border-radius: 50%;
+                            "/> </center>
+                          </td>
+                          <td><center><img src="/images/addgasconnection.jpg" style="width: 100;  border-radius: 50%;
+                            "/> </center>
+                          </td>
+                          <td><center><img src="/images/viewcustomer.jpg" style="width: 100;  border-radius: 50%;
+                            "/> </center>
+                          </td>
+                          <td><center><img src="/images/customercomplaint.jpg" style="width: 100;  border-radius: 50%;
+                            "/> </center>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!--<form> 
+                                <button type="submit"> <a href="register"><p><center>Add Customer/Dealer</center></p></a> 
+                                </button>    
+   
+                            </form> --> 
+                            <form> 
+                                <button type="submit" onclick="addcustomerdealer()"><p><center>Add Customer/Dealer</center></p>
+                                </button>    
+   
+                            </form>
+                          </td>
+                          <td>
+                            <form> 
+                                <button type="submit" onclick="addgasconnection()"><p><center>Add Gas Connection</center></p>
+                                </button>    
+   
+                            </form>
+                          </td>
+                          <td>
+                            <form action="/data/viewdelivery" method="POST"> 
+                                <button type="submit"><p><center>View Delivery Details</center></p>
+                                </button>    
+   
+                            </form>
+                          </td>
+                          <td>
+                              
+                            <form action="/data/viewall" method="POST"> 
+                                <button type="submit"><p><center>View Customer/Dealer</center></p>
+                                </button>    
+   
+                            </form>
+                            <!--button type="submit" onclick="myFunction()"><p><center>View Customer/Dealer</center></p>
+                            </button>  -->
+                          </td>
+                          <td>
+                            <form action="/data/viewcomp" method="POST"> 
+                                <button type="submit"><p><center>View Customer Complaint</center></p></a>
+                                </button>    
+   
+                            </form>  
+                          </td>
+                        </tr>
+                       
+                      </table>
+                      
+                     </div>
+
+                     <!--<p id="demo"></p>
+                     <script>
+                        function myFunction() {
+                          document.getElementById("demo").innerHTML = "Hello World";
+                        }
+                        </script>
+                    -->
+            
+                <div class="partner">
+                    <h1><center>Partner with Us</center> </h1>
+                    <br>
+                    <table style="width:100%">
+                        
+                        <tr>
+                          <td><img src="/images/bharatgas.jpg" style="width: 800;"/> 
+                          </td>
+                          <td><img src="/images/indianoil.jpg" style="width: 800;"/> 
+                          </td>
+                          <td><img src="/images/HP.jpg" style="width: 800;"/> 
+                          </td>
+                          <td><img src="/images/supergas.png" style="width: 800;"/> 
+                          </td>
+                        </tr>
+                    </table>    
+                </div>
+                <br>
+                <div class="footer" style="background-color: #717171;">
+                    <p><center>
+                        Copyright © Online Gas Booking System<br>
+                        SiteMap Terms of Use Privacy Policy Hyperlinking Policy<br>
+                        Powered By Online Gas System Pvt Ltd
+                    </center></p>
+
+                </div>
+        </div>    
+        
+        
+        
+    </body>
+</html>
